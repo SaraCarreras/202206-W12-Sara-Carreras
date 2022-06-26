@@ -9,6 +9,7 @@ export const PersonajesArr = [
     yearsOfReign: 1.5,
     age: 16,
     emoji: '👑',
+    phrase: 'Vais a morir todos',
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const PersonajesArr = [
     skill: 7,
     age: 32,
     emoji: '🗡',
+    phrase: 'Soy un loser',
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ export const PersonajesArr = [
     weapon: 'dragons',
     skill: 9,
     age: 20,
+    phrase: 'Soy un loser',
   },
   {
     id: 4,
@@ -33,7 +36,8 @@ export const PersonajesArr = [
     typeOfCharacter: 'adviser',
     adviserOf: 'Daenerys',
     age: 26,
-    emoji: '🗡',
+    emoji: '🎓',
+    phrase: 'No sé por qué, pero creo que voy a morir pronto',
   },
   {
     id: 5,
@@ -43,5 +47,6 @@ export const PersonajesArr = [
     gradeOfSubmission: '9',
     age: 41,
     emoji: '🛡',
+    phrase: 'Soy un loser',
   },
 ];
