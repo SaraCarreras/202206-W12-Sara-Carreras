@@ -1,6 +1,3 @@
-//crear array de objetos PErsonajes aquí son su nombre,el ID y su special skill que varías egún el tpo de personaje
-//no sé si  con un array dentro  o sino a traves del interfaz, PERSONAJE y luego a parte
-// en el mostrat que sea CONDICIONAL,si tiene la prop reinado s emuestre y sino no.
 export const PersonajesArr = [
   {
     id: 1,
