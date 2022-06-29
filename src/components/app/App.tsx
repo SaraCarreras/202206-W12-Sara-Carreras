@@ -2,12 +2,12 @@ import React from 'react';
 
 import './App.css';
 
-import { CardsContextProvider } from '../../context/arr.context';
+import { ArrayPersonajesProvider } from '../../context/arr.context.provider';
 import { PersonajesList } from '../personajes.list/personajes.list';
 
 function App() {
   return (
-    <CardsContextProvider>
+    <ArrayPersonajesProvider>
       <div className="app container">
         <PersonajesList></PersonajesList>
       </div>
@@ -21,7 +21,7 @@ function App() {
           alt="Nombre y familia del que habla"
         />
       </div>
-    </CardsContextProvider>
+    </ArrayPersonajesProvider>
   );
 }
 
