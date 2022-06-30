@@ -28,10 +28,7 @@ describe('Given the component PersonajesList', () => {
         </ArrayPersonajesContext.Provider>
       );
     });
-    /* REVISAR
-    const elementArr = screen.getByText('Test');
-    expect(elementArr).toBeInTheDocument();
-    */
+
     const elementArr = screen.queryByTestId('listID');
     expect(elementArr).toBeDefined();
   });

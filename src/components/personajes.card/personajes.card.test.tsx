@@ -54,6 +54,10 @@ describe('Given the component PersonajesCard', () => {
         const deletebutton = screen.queryAllByTestId('button-delete');
         userEvent.click(deletebutton[0]);
         expect(deleteMock).toHaveBeenCalled();
+        /* REVISAR
+    const elementArr = screen.getByText('Test');
+    expect(elementArr).toBeInTheDocument();
+    */
       });
     });
   });
