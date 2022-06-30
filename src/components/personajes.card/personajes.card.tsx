@@ -13,7 +13,7 @@ export function PersonajesCard({
   return (
     <div className="card character__card">
       <img
-        src={require('../img/' + card.imgName + '.jpg')}
+        src={require('../../img/' + card.imgName + '.jpg')}
         alt={card.nameAndFamily}
         className={
           'character__picture card-img-top' +
