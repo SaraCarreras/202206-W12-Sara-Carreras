@@ -41,7 +41,11 @@ export function PersonajesCard({
             <button className="character__action btn-speak" onClick={toSpeack}>
               habla
             </button>
-            <button className="character__action btn-die" onClick={toDie}>
+            <button
+              className="character__action btn-die"
+              onClick={toDie}
+              data-testid="button-delete"
+            >
               muere
             </button>
           </div>

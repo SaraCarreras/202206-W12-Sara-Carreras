@@ -1,10 +1,6 @@
 import { PersonajesCard } from '../personajes.card/personajes.card';
-import { iCardContext } from '../../components/interfaces/icard.context';
 
-import {
-  ArrayPersonajesContext,
-  initialContext,
-} from '../../context/arr.context.provider';
+import { ArrayPersonajesContext } from '../../context/arr.context.provider';
 import { useContext } from 'react';
 
 export function PersonajesList() {
@@ -17,7 +13,11 @@ export function PersonajesList() {
   return (
     <ul className="characters-list row list-unstyled">
       {characters.map((card) => (
-        <li className="character col" key={card.nameAndFamily}>
+        <li
+          className="character col"
+          key={card.nameAndFamily}
+          data-testid="listID"
+        >
           <PersonajesCard
             card={card}
             toDie={() => toDie(card.id)}
