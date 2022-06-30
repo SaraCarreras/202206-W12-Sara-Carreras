@@ -30,7 +30,6 @@ export function ArrayPersonajesProvider({
   };
   const toSpeack = (id: number) => {};
 
-  //MIN 00.40
   const context = {
     personajes,
     toDie,
