@@ -1,4 +1,4 @@
-import { RolePersonaje } from '../app/role.personaje/role.personaje';
+import { RolePersonaje } from '../role.personaje/role.personaje';
 import { iPersonajesArr } from '../interfaces/personajes.arr';
 
 export function PersonajesCard({

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { iPersonajesArr } from '../../interfaces/personajes.arr';
+import { iPersonajesArr } from '../interfaces/personajes.arr';
 
 import { RolePersonaje } from './role.personaje';
 
