@@ -1,0 +1,66 @@
+//crear array de objetos PErsonajes aquí son su nombre,el ID y su special skill que varías egún el tpo de personaje
+//no sé si  con un array dentro  o sino a traves del interfaz, PERSONAJE y luego a parte
+// en el mostrat que sea CONDICIONAL,si tiene la prop reinado s emuestre y sino no.
+import { iPersonajesArrType } from '../interfaces/personajes.arr';
+
+export const PersonajesArr: iPersonajesArrType = [
+  {
+    id: 1,
+    alive: true,
+    imgName: 'Joffrey',
+    nameAndFamily: 'Joffrey Baratheon',
+    typeOfCharacter: 'king',
+    yearsOfReign: 1.5,
+    age: 16,
+    emoji: '👑',
+    phrase: 'Vais a morir todos',
+  },
+  {
+    id: 2,
+    alive: true,
+    imgName: 'Jaime',
+    nameAndFamily: 'Jaime Lannister',
+    typeOfCharacter: 'fighter',
+    weapon: 'sword',
+    skill: 7,
+    age: 32,
+    emoji: '🗡',
+    phrase: 'Primero pego y luego pregunto',
+  },
+  {
+    id: 3,
+    alive: true,
+    imgName: 'Daenerys',
+    nameAndFamily: 'Daenerys Targaryen ',
+    typeOfCharacter: 'fighter',
+    weapon: 'dragons',
+    skill: 9,
+    age: 20,
+    emoji: '🗡',
+    phrase: 'Primero pego y luego pregunto',
+  },
+  {
+    id: 4,
+    alive: true,
+    imgName: 'Tyrion',
+    nameAndFamily: 'Tyrion Lannister',
+    typeOfCharacter: 'adviser',
+    adviserOf: 'Daenerys',
+    gradeOfSubmission: 10,
+    age: 26,
+    emoji: '🎓',
+    phrase: 'No sé por qué, pero creo que voy a morir pronto',
+  },
+  {
+    id: 5,
+    alive: true,
+    imgName: 'Bronn',
+    nameAndFamily: 'Bronn Stokeworth',
+    typeOfCharacter: 'squire',
+    squirerOf: 'Jaime Lannister',
+    gradeOfSubmission: 9,
+    age: 41,
+    emoji: '🛡',
+    phrase: 'Soy un loser',
+  },
+];
