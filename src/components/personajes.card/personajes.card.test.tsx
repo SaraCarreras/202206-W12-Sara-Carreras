@@ -54,10 +54,33 @@ describe('Given the component PersonajesCard', () => {
         const deletebutton = screen.queryAllByTestId('button-delete');
         userEvent.click(deletebutton[0]);
         expect(deleteMock).toHaveBeenCalled();
-        /* REVISAR
-    const elementArr = screen.getByText('Test');
-    expect(elementArr).toBeInTheDocument();
-    */
+      });
+    });
+
+    describe('when the comp is rendered', () => {
+      test('should have the Test info as name', () => {
+        const PersonajesArr: iPersonajesArr = {
+          id: 1,
+          alive: true,
+          imgName: 'Joffrey',
+          nameAndFamily: 'Test',
+          typeOfCharacter: 'king',
+          yearsOfReign: 1.5,
+          age: 16,
+          emoji: '👑',
+          phrase: 'Vais a morir todos',
+        };
+        const deleteMock = jest.fn();
+        render(
+          <PersonajesCard
+            card={PersonajesArr}
+            toDie={deleteMock}
+            toSpeack={() => {}}
+          ></PersonajesCard>
+        );
+
+        const elementArr = screen.getByText('Test');
+        expect(elementArr).toBeInTheDocument();
       });
     });
   });
