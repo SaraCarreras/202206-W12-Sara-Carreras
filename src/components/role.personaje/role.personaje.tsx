@@ -1,4 +1,4 @@
-import { iPersonajesArr } from '../../interfaces/personajes.arr';
+import { iPersonajesArr } from '../interfaces/personajes.arr';
 
 export function RolePersonaje({ personaje }: { personaje: iPersonajesArr }) {
   const additionalInfoByRole = (
